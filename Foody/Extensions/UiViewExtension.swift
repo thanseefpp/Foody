@@ -10,7 +10,7 @@ import UIKit
 //to expand the existing uiview field features
 extension UIView {
     @IBInspectable var cornerRadius : CGFloat {
-        get { return cornerRadius }
+        get { return self.cornerRadius }
         set {
             self.layer.cornerRadius = newValue
         }
