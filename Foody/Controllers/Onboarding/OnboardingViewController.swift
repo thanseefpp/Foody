@@ -39,11 +39,15 @@ class OnboardingViewController: UIViewController {
             OnBoardingSlides(title: "Best Quality Foods", descritpion: "Our dishes are prepared by only the best", image: #imageLiteral(resourceName: "img1")),
             OnBoardingSlides(title: "Instant Fast Delivery", descritpion: "Your order will be delivered instantly irrespective of your location around the world.", image: #imageLiteral(resourceName: "img3"))
         ]
+        pageController.numberOfPages = slides.count // setting pagecontroller the size of array
     }
 
     @IBAction func nextButtonClicked(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
-            print("go to next page")
+            let controller = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .flipHorizontal
+            present(controller, animated: true, completion: nil)
         }else{
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)

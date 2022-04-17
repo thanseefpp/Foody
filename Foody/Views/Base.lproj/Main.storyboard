@@ -123,6 +123,40 @@
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="83.705357142857139"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="BTw-aE-ihZ">
+            <objects>
+                <viewController id="5Iv-vG-N2z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3n5-2R-FIV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lvr-vL-MAd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="auX-rS-FEs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fag-zb-vXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="88"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="anU-Qc-DO5">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNC" automaticallyAdjustsScrollViewInsets="NO" id="jQb-OT-I2H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AJl-fA-NLq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Iv-vG-N2z" kind="relationship" relationship="rootViewController" id="Vd6-I7-OZE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kif-DU-tFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.75362318840587" y="85.714285714285708"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="redLight">
